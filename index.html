@@ -4,67 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleCF.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Digital Resume</title>
 </head>
 
 <body>
-    <header>
-        <div class="titleContainer greyB">
-            <h1 class="silkscreen-bold whiteT" z>
-                CARNET Léo
-            </h1>
-            <h2 class="silkscreen-regular whiteT">
-                Web developper
-            </h2>
+    <header class="backdrop-blur-sm">
+        <div class="py-4 px-2 lg:mx-4 xl:mx-12 ">
+            <div class="">
+                <nav class="flex items-center justify-between flex-wrap  ">
+                    <div class="block lg:hidden">
+                        <button
+                            class="navbar-burger flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+                            <svg class="fill-current h-6 w-6 text-gray-700" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="main-nav" class="w-full flex-grow lg:flex items-center lg:w-auto hidden  ">
+                        <div class="text-sm lg:flex-grow mt-2 animated jackinthebox xl:mx-8">
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-orange-500  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                HOME
+                            </a>
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                ROAD & STORY
+                            </a>
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                ACCOMMODATION
+                            </a>
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                TOURS
+                            </a>
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                CONTACT US
+                            </a>
+                            <a href="#home"
+                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                COMING SOON
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div class="greyB navStyleBar">
-
-        </div>
-        <nav>
-            <a href=""></a>
-            <a href="#secondPage"></a>
-            <a class="flip" href=""></a>
-        </nav>
     </header>
     <main>
-        <section id="firstPage">
-            <div class="floating">
-                <img src="./misc/Epitech_Léo_Carnet_PreMSc_Promo2028_Rennes.png" alt="Photo de Leo">
-                <div>
-                </div>
-                <div id="Bdots"></div>
-            </div>
-            <div class="titleContainer centerTitle ">
-                <h1 class="silkscreen-bold whiteT shine centered" z>
-                    CARNET Léo
-                </h1>
-                <h2 class="silkscreen-regular whiteT centered">
-                    Web developper
-                </h2>
-
-                <a id="TextTilt" class="shine" href="#secondPage">
-                    <h3 class="silkscreen-bold whiteT ">
-                        online resume !
-                    </h3>
-                    <div>
-                        <h3 class="silkscreen-regular whiteT">V</h3>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="secondPage">
-
-        </section>
+        <video controls width="250px">
+        <source src="/misc/71122-537102350_small.mp4" type="video/mp4" />
     </main>
     <footer>
 
     </footer>
-    <script src="js/script.js"></script>
+    <script>
+// Navbar Toggle
+document.addEventListener('DOMContentLoaded', function () {
+    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    if ($navbarBurgers.length > 0) {
+  
+      $navbarBurgers.forEach(function ($el) {
+        $el.addEventListener('click', function () {
+  
+          var $target = document.getElementById('main-nav');
+  
+          $target.classList.toggle('hidden');
+  
+        });
+      });
+    }
+  
+  });
+  </script>
 </body>
 
 </html>
