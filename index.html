@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/misc/favicon.ico">
     <title>Digital Resume</title>
 </head>
 
-<body>
-    <header class="backdrop-blur-sm">
+<body class="bg-black text-white">
+
+    <header class="backdrop-blur-sm fixed w-full z-100">
         <div class="py-4 px-2 lg:mx-4 xl:mx-12 ">
             <div class="">
                 <nav class="flex items-center justify-between flex-wrap  ">
@@ -26,29 +29,21 @@
                     </div>
                     <div id="main-nav" class="w-full flex-grow lg:flex items-center lg:w-auto hidden  ">
                         <div class="text-sm lg:flex-grow mt-2 animated jackinthebox xl:mx-8">
-                            <a href="#home"
+                            <a href=""
                                 class="block lg:inline-block text-md font-bold  text-orange-500  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
                                 HOME
                             </a>
-                            <a href="#home"
-                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                            <a href="#RoadS"
+                                class="block lg:inline-block text-md font-bold  text-white-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
                                 ROAD & STORY
                             </a>
-                            <a href="#home"
-                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
-                                ACCOMMODATION
+                            <a href="#PastP"
+                                class="block lg:inline-block text-md font-bold  text-white-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                PAST PROJECTS
                             </a>
-                            <a href="#home"
-                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
-                                TOURS
-                            </a>
-                            <a href="#home"
-                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
-                                CONTACT US
-                            </a>
-                            <a href="#home"
-                                class="block lg:inline-block text-md font-bold  text-gray-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
-                                COMING SOON
+                            <a href="#Contacts"
+                                class="block lg:inline-block text-md font-bold  text-white-900  sm:hover:border-indigo-400  hover:text-orange-500 mx-2 focus:text-blue-500  p-1 hover:bg-gray-300 sm:hover:bg-transparent rounded-lg">
+                                CONTACTS
                             </a>
                         </div>
                     </div>
@@ -56,33 +51,174 @@
             </div>
         </div>
     </header>
-    <main>
-        <video controls width="250px">
-        <source src="/misc/71122-537102350_small.mp4" type="video/mp4" />
+    <video id="background-video" src="misc/71122-537102350_small.mp4" autoplay loop muted></video>
+    </video>
+    <main class="content-overlay w-full">
+        <div class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+            <img src="/misc/Epitech_Léo_Carnet_PreMSc_Promo2028_Rennes.png" class="rounded-full z-1" alt="Photo of me">
+            <h1 class="z-2 text-4xl md:text-6xl font-bold mb-4 text-white"
+                style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">CARNET Léo</h1>
+            <h2 class="z-2 text-2xl md:text-4xl font-bold mb-4 text-white">Web developper</h2>
+
+            <svg class="z-2 w-10 h-10 mt-16 animate-bounce text-white" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+        <div id="RoadS" class="bg-gray-900 opacity-95 backdrop-blur-md py-20 px-4 sm:px-6 md:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300">Road and Story</h2>
+                <div class="space-y-6 text-gray-300">
+                    <p>Passionate junior web developer, recently graduated from ENI and currently pursuing a Master's
+                        degree at EPITECH Rennes. Backed by concrete experience (full-stack development for an e-sport data analysis application at Gameward), I am actively seeking a
+                        stimulating apprenticeship to leverage my diverse technical skills and continue my learning within a professional team environment.</p>
+                </div>
+            </div>
+        </div>
+        <div class=" flex-col justify-center items-center m-8 px-4 sm:px-6 md:px-8">
+            <h2 id="PastP" class="text-3xl font-bold text-center my-8 text-cyan-300">PAST PROJECTS</h2>
+            <article class="h-fit flex flex-wrap items-center justify-center">
+
+                <div class=" mx-4  h-fit  w-fit flex items-center justify-center text-center p-4 ">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg backdrop-blur-xl">
+                        <img class="w-full" src="misc/3788212.jpg" alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Games projects</div>
+                            <p class="text-white-700 text-base">
+                                During my formation at Eni and Epitech, i've been coding some fun games in different
+                                languages, the last one being an hangman game.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Python</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#C++</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mx-4  h-fit  w-fit flex items-center justify-center text-center p-4 ">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg backdrop-blur-xl">
+                        <img class="w-full" src="misc/joueur-esport-professionnel-jouant-dans-un-tournoi-de-jeu.jpg"
+                            alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Gameward Internship</div>
+                            <p class="text-white-700 text-base">
+                                During my internship at Gameward, an e-sport club, I developed a full-stack web
+                                application for analyzing and displaying match data.
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#FullStack</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#JavaSpring</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#React</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Postgre</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" mx-4  h-fit  w-fit flex items-center justify-center text-center p-4 ">
+                    <div class="max-w-sm rounded overflow-hidden shadow-lg backdrop-blur-xl">
+                        <img class="w-full" src="misc/sacs-a-provisions-et-portables-concept-de-magasinage-en-ligne.jpg"
+                            alt="Sunset in the mountains">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Bidding platform</div>
+                            <p class="text-white-700 text-base">
+                                At ENI, I was part of a team tasked with developing a bidding platform from
+                                end-to-end—from the database design to the full back-end and front-end implementation.
+                                Was a fun experience !
+                            </p>
+                        </div>
+                        <div class="px-6 pt-4 pb-2">
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#sql</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#php</span>
+                            <span
+                                class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#TeamWork</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
     </main>
     <footer>
+        <div id="RoadS" class="bg-gray-900 opacity-95 backdrop-blur-md py-20 px-4 sm:px-6 md:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 text-cyan-300">CONTACTS</h2>
+                <form action="mailto:leo.carnet@epitech.eu" method="POST" class="space-y-6">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-white">First Name</label>
+                            <input type="text" id="first-name" name="firstName" required placeholder="Joe"
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-white">Last Name</label>
+                            <input type="text" id="last-name" name="lastName" required placeholder="Bijoba"
+                                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="Joe.bijoba@example.com"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-white">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="I'm all ears !"
+                            class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                    </div>
+
+                    <div class="w-full flex justify-center">
+                        <button type="submit"
+                            class="m-1 w-fit flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out">
+                            Send
+                        </button>
+                        <input class="m-1 w-fit flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out" type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="Contacts" class="text-center py-8 bg-gray-900 ">
+            <p>
+                Copyright © 2025 -
+                <a class="font-semibold" href="mailto:leo.carnet@epitech.eu">CARNET Léo</a>
+            </p>
+        </div>
 
     </footer>
     <script>
-// Navbar Toggle
-document.addEventListener('DOMContentLoaded', function () {
-    var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
-    if ($navbarBurgers.length > 0) {
-  
-      $navbarBurgers.forEach(function ($el) {
-        $el.addEventListener('click', function () {
-  
-          var $target = document.getElementById('main-nav');
-  
-          $target.classList.toggle('hidden');
-  
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            if ($navbarBurgers.length > 0) {
+
+                $navbarBurgers.forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+
+                        var $target = document.getElementById('main-nav');
+
+                        $target.classList.toggle('hidden');
+
+                    });
+                });
+            }
+
         });
-      });
-    }
-  
-  });
-  </script>
+    </script>
 </body>
 
 </html>

@@ -1,4 +1,19 @@
-#backgroundVid{
-    width: 100vw;
-    height: 100vh;
-}
+body {
+            font-family: 'Inter', sans-serif;
+        }
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            object-fit: cover; 
+            filter: brightness(0.5);
+        }
+        .content-overlay {
+            position: relative;
+            z-index: 1;
+        }
