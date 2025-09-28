@@ -1,0 +1,128 @@
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.whiteB {
+  background-color: #FDFFF7;
+}
+
+.whiteT {
+  color: #FDFFF7;
+}
+
+.purpB {
+  background-color: #B4ADEA;
+}
+
+.greyB {
+  background-color: #50514F;
+}
+
+.o1 {
+  opacity: 0.1;
+}
+
+.o2 {
+  opacity: 0.2;
+}
+
+.o3 {
+  opacity: 0.3;
+}
+
+.o4 {
+  opacity: 0.4;
+}
+
+.o5 {
+  opacity: 0.5;
+}
+
+.o6 {
+  opacity: 0.6;
+}
+
+.o7 {
+  opacity: 0.7;
+}
+
+.o8 {
+  opacity: 0.8;
+}
+
+.o9 {
+  opacity: 0.9;
+}
+
+.boing {
+  animation: none;
+}
+
+.boing:hover {
+  animation: boing 0.2s;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.flip{
+  transition:transform 0.5s
+}
+.flip:hover{
+  transform: rotate3d(0,1,0,180deg);
+}
+.shine{
+  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000000 50%, rgba(0, 0, 0, 0.6) 70%);
+  mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  from {
+    mask-position: 150%;
+  }
+  
+  to {
+    mask-position: -50%;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate3d(0,1,0,3deg) translateZ(1cm) translateX(5px);
+  }
+
+  100% {
+    transform: translateY(0) ;
+  }
+}
+@keyframes boing {
+  0% {
+    transform: translateZ(0cm);
+  }
+
+  50% {
+    transform: translateZ(3cm);
+  }
+
+  100% {
+    transform: translateZ(0cm);
+  }
+}
